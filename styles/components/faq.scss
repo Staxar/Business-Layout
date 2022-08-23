@@ -1,0 +1,10 @@
+.faq__ {
+  &button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &details {
+    color: var(--text-colo);
+  }
+}

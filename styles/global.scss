@@ -1,0 +1,198 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@1,300;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CLASSES ====================*/
+.section {
+  padding: 2rem 1rem 2rem 1rem;
+  &__title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+  }
+  &__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+    margin-top: var(--mb-2);
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+}
+
+/* ==================== LAYOUT ==================== */
+.container {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+.grid-item {
+  padding: 0.25rem;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex__column {
+  flex-direction: column;
+}
+.flex__column_column {
+  flex-direction: column;
+}
+.flex__row {
+  flex-direction: row;
+}
+
+/* Show menu */
+.show-menu {
+  bottom: 0 !important;
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
+/* Change background header */
+.scroll_header {
+  box-shadow: 0 -1 4px rgba(0, 0, 0, 0.15);
+}
+
+/*==================== BUTTONS ====================*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color-alt);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  border: none;
+
+  &__big {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-self: center;
+  }
+}
+
+.button:hover {
+  background-color: var(--first-color);
+}
+
+.button__icon {
+  font-size: 1rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--white {
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button--small {
+  padding: 0.75rem 1rem;
+}
+
+.button--link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+.button--link:hover {
+  background-color: transparent;
+  color: var(--first-color);
+}
+
+#darkMode {
+  border: none;
+  color: white;
+  width: 20px;
+  height: 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+body.dark-theme #darkMode {
+  background: url("../public/assets/day-sunny-icon.svg");
+  background-repeat: no-repeat;
+}
+body.light-theme #darkMode {
+  background: url("../public/assets/moon-line-icon.svg");
+  background-repeat: no-repeat;
+}
+/*==================== SCROLL BAR ====================*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}

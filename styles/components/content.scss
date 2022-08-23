@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+.content {
+  &__row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__quote {
+    padding: 0.5rem;
+    background: #fffdf5;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: "Special Elite", cursive;
+    color: var(--text-color-light);
+  }
+  &__clients {
+    padding: 1rem;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  &__grid_clients {
+    gap: 0;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+  }
+}

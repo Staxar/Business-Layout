@@ -1,0 +1,8 @@
+.stats {
+  &__number {
+    font-size: var(--big-font-size);
+  }
+  &__description {
+    font-weight: bold;
+  }
+}
