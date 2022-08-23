@@ -65,10 +65,14 @@
   }
   .grid-item-b {
     grid-area: b;
+    display: grid;
   }
   .contact__ {
     &form {
       grid-template-columns: 1fr;
     }
+  }
+  .content__grid_clients {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
