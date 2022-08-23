@@ -18,10 +18,12 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+    max-width: 1000px;
   }
 
   &wrap {
     width: 100%;
+    max-width: 500px;
     background-color: var(--container-color);
     border-radius: 10px;
     overflow: hidden;
