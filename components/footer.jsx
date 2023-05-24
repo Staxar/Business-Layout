@@ -6,8 +6,8 @@ function Footer() {
         <div className="footer_bg">
           <div className="footer__container container grid">
             <div className="">
-              <h1 className="footer__title">Title</h1>
-              <span className="footer__subtitle">Subtitle</span>
+              <h1 className="footer__title">Your title</h1>
+              <span className="footer__subtitle">Your Subtitle</span>
             </div>
             <ul className="footer__links">
               <li className="footer__link">Services</li>

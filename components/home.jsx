@@ -15,7 +15,7 @@ function Home() {
               Find the best solition for Your business.
             </span>
             <span className="section__subtitle"> Check responsive layout.</span>
-            <Link href="/sign-in">
+            <Link href="#">
               <div className="button button__big">
                 <p>Get started for FREE</p>
               </div>
